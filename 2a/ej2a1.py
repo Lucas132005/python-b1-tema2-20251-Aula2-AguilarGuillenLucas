@@ -49,20 +49,56 @@ Exemple:
      En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.
 """
 
-
+shopping_list = [10, 449, 33, 44, 188, 640]
 def sum_even_numbers_in_list_while(list_numbers):
     # Write here your code
-    pass
+    #Esto no esta bien
+    i=0
+    suma_De_while = 0
+    while i < len(list_numbers):
+        if list_numbers[i]%2 == 0:
+            suma_De_while += list_numbers[i]
+            i +=1
+        else:
+            i +=1
+    return suma_De_while
+hecho_while= sum_even_numbers_in_list_while(shopping_list)
+print(hecho_while)
+        
+
 
 
 def sum_even_numbers_in_list_for(list_numbers):
     # Write here your code
+    suma_de_pares= 0
+    for i in list_numbers:
+        if i%2==0:
+            suma_de_pares += i
+    return suma_de_pares
     pass
 
 
 def sum_even_numbers_in_list_do_while(list_numbers):
     # Write here your code
-    pass
+    #Aqui has de hacer el do-while artificial con el while True y break
+    sumas_pares = 0
+    i = 0
+    if len(list_numbers) > 0:
+        while True:
+            if list_numbers[i]%2 == 0:
+                sumas_pares += list_numbers[i]
+                i += 1
+            else:
+                i += 1
+        
+            if i == len(list_numbers):
+                break
+    return sumas_pares
+shopping_list = [10, 449, 33, 44, 188, 640]
+suma = sum_even_numbers_in_list_do_while(shopping_list)
+print(suma)    
+
+
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
