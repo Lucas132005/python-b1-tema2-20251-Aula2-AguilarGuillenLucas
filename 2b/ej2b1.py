@@ -49,8 +49,11 @@ Exemple:
 """
 
 
-def sum_list_numbers(
-    list_numbers):
+def sum_list_numbers(list_numbers):
+    numero_total = 0
+    for i in list_numbers:
+        numero_total += i
+    return numero_total
     # Write here your code
     pass
 
@@ -61,4 +64,4 @@ def sum_list_numbers(
 # Si vols provar el teu codi, descomenta les línies següents i executa
 # l'script
 
-# print(sum_list_numbers([50, 10.5, 21, 37.2, 99.9, 40.75, 80]))
+print(sum_list_numbers([50, 10.5, 21, 37.2, 99.9, 40.75, 80]))
