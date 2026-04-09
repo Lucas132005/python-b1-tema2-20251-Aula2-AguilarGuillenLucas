@@ -48,11 +48,11 @@ Exemple:
 
 
 def triangle_area_calculate(base, height):
-    if base >= 0 and height >= 0:
-        area = (base * height)/2     # Aplicamos ecuación area triangulo y guardamos en area
+    if base > 0 and height > 0:
+        area = (base * height)/2     # Ec. area triangle and save in area
     else:
         raise ValueError             # Usamos el raise para error
     return area
 
 
-print(triangle_area_calculate(-13, 45))
+# print(triangle_area_calculate(-13, 45))
