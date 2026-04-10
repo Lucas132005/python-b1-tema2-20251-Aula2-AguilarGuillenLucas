@@ -65,12 +65,13 @@ def check_leap_year(year):
         return True
     else:
         return False
-    # Write here your code
+    
 
+# Write here your code
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el
 # script
-
 # Si vols provar el teu codi, descomenta les línies següents i executa
 # l'script
+
 
 print(check_leap_year(2020))
